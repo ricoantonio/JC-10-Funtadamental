@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Intro HTML</title>
+    <style>
+        table,td,th{
+            border: 5px solid rgb(236, 91, 91) ;
+            border-collapse: collapse;
+            padding: 10px
+        }
+        
+        table{
+            width: 30% ;
+            margin-bottom:80px;
+        }
+        th,td {
+            text-align: center
+        }
+    </style>
+    
+</head>
+<body>
+    <!-- HEADING -->
+    <h1>ini heading 1</h1>
+    <h2>ini heading 2</h2>
+    <h3>ini heading 3</h3>
+    <h4>ini heading 4</h4>
+    <h5>ini heading 5</h5>
+    <h6>ini heading 6</h6>
+
+    <!-- Link, tang Anchor -->
+    <a href="https://www.google.com/">klik link ini</a>
+    <br>
+    <!-- Text formating  -->
+    <b>ini bold</b>
+    <br>
+    <strong>ini strong</strong>
+    <br>
+    <i>ini italic</i>
+    <br>
+    <em>ini emphasized</em>
+    <br>
+    <mark>ini mark</mark>
+    <br>
+    <small>INI SMALL</small>
+    <br>
+    <del>ini delete</del>
+    <br>
+    <ins>ini inserted</ins>
+    <br>
+    CO<sub>2</sub>
+    O<sup>2</sup>
+    <br>
+
+
+
+    <!-- Paragraph -->  
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, beatae porro! Quas cumque distinctio, quaerat quibusdam laborum voluptatum minima, ea beatae aut et neque. Nam doloremque aut in odio expedita.
+    </p>
+    <!-- lorem5=5 kalimat -->
+    <p>Lorem ipsum dolor sit amet.</p>
+    
+    <!-- form -->
+    <form action="">
+        <p>Nama: <input type="text"></p>
+        <p>Email: <input type="text"></p>
+        <p>Password: <input type="password"></p>
+        <p><input type="color" name="" id=""></p>
+        <p>
+            <input type="radio" name="gender1" id=""> Pria
+            <input type="radio" name="gender1" id=""> Wanita
+        </p>
+
+    <input type="button" value="kilik aku">
+
+    <!-- List -->
+     <!--Ordered List  -->
+     <ol>
+         <li>List ke -1</li>
+         <li>List ke -2</li>
+         <li>List ke -3</li>
+         <li>List ke -4</li>
+         <li>List ke -5</li>
+     </ol>
+
+    <!-- Unordered List -->
+     <ul>
+         <li>list pertama</li>
+         <li>list kedua</li>
+         <li>list ketiga</li>
+         <li>list keempat</li>
+         <li>list kelima</li>
+     </ul>
+
+     <!-- Images -->
+     <!-- teks pada alt akan muncul jika src gagall diakses -->
+     <img src="./pic/POTY_Pikachu_3.jpg" alt="gambar alternatif" width="32%">
+     <img src="./pic/da30x7b-fa97064d-4109-474b-9ec4-a5e2a69d61a7.jpg" alt="" width="32%">
+     <img src="./pic/Pokemon+Pikachu+Wall+Decal.webp" alt="" width="32%">
+     <br>
+     <br>
+     <br>
+    
+     
+     <!-- Table -->
+     <table>
+         <!-- tr =table row (baris) -->
+         <!-- td =table data (kolom) -->
+        <tr>
+            <th colspan="3">TABLE</th>
+        </tr>
+
+         <tr>
+            <th>No</th>
+            <th>Name</th>
+            <th>PRICE</th>
+         </tr>
+         <tr>
+            <td>1</td>
+            <td>Appel</td>
+            <td>3.25</td>
+         </tr>
+         <tr>
+            <td>2</td>
+            <td>Orange</td>
+            <td>2.37</td>
+         </tr>
+         <tr>
+         <td rowspan="2">Total</td>
+         <td>Barang</td>
+         <td>5.61</td>
+         </tr>
+         <tr>
+             
+             <td>PPN</td>
+             <td>0.5</td>
+         </tr>
+
+     </table>
+
+
+     <!-- EXERCISE -->
+
+
+
+
+
+     <!-- PDF 7 + javascript -->
+
+     <!-- tag -->
+
+     <form action="">
+    <p>
+        Nama: <input type="text"id = 'nama'>
+     </p>
+     <p>
+        Usia: <input type="number"id = 'usia'>
+     </p>
+     <p>
+         Gender:
+         <input type="radio" name="gender" value='Laki-Laki' id="">Pria
+         <input type="radio" name="gender" value='Perempuan' id="">Wanita
+     </p>
+
+        Pekerjaan:
+        <select name="" id="pekerjaan">
+            <option value="GURU">Guru</option>
+            <option value="CEO">CEO</option>
+            <option value="SENIMAN">Seniman</option>
+        </select>
+    <p>
+        Skill:
+        <input type="checkbox" name="skill" id="" value='HTML 5'> HTML
+        <input type="checkbox" name="skill" id="" value='CSS 3'> CSS
+        <input type="checkbox" name="skill" id="" value='JAVASCRIPT'> JAVASCRIPT
+    </p>
+    
+
+
+    </form>
+
+    <button onclick="myFunction()">Submit</button>
+    <p id='disini'>
+        Hasil
+
+    </p>
+    
+
+
+    <script src="./introHTML.js"></script>
+</body>
+</html>

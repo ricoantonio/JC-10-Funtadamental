@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Coding Chalange 2</title>
+    <style>i{display: inline-block ; margin: 5px}</style>
+    <!-- <script defer src="./2.js"></script> -->
+</head>
+<body>
+    <p><b>Input: </b><input type="number" name="" id="input"></p>
+    <p><button onclick="lihat()">Lihat</button></p>
+    <div id='hasil'></div>
+    <script>
+          
+    var lihat=()=>{
+        let input=[]
+        angka=document.getElementById("input").value
+        var hasil=angka.split("")
+        var out = "";
+            for (let i = 0; i < hasil.length; i++) {
+                out += "<i>"
+                switch (parseInt(hasil[i])) {
+                    case 0:
+                        out += "&nbsp;__<br>|&nbsp;&nbsp;&nbsp;&nbsp;|<br>|__|"
+                        break;
+                    case 1:
+                        out += "<br>|<br>|"
+                        break;
+                    case 2:
+                        out += "&nbsp;__<br>&nbsp;__|<br>|__"
+                        break;
+                    case 3:
+                        out += "__<br>__|<br>__|"
+                        break;
+                    case 4:
+                        out += "|__|<br>&nbsp; &nbsp; &nbsp;|"
+                        break;
+                    case 5:
+                        out += "&nbsp;__<br>|__<br>&nbsp;__|"
+                        break;
+                    case 6:
+                        out += "&nbsp;__<br>|__<br>|__|"
+                        break;
+                    case 7:
+                        out += "__<br> &nbsp;&nbsp;&nbsp; |<br>&nbsp;&nbsp;&nbsp;  |"
+                        break;
+                    case 8:
+                        out += "&nbsp;__<br>|__|<br>|__|"
+                        break;
+                    case 9:
+                        out += "&nbsp;__<br>|__|<br>&nbsp;__|"
+                        break;
+                    default:
+                        break;
+                }
+                out += "</i>"
+            }
+
+            document.getElementById("hasil").innerHTML = out;
+            console.log(hasil);
+    }
+    </script>
+</body>
+</html>

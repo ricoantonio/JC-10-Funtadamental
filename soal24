@@ -1,0 +1,21 @@
+1. munculkan daftar menu 
+    1. ayam @25rb
+    2. ikan @50rb
+    3. sapi @75rb
+
+    minta input menu pilihan 
+
+2. minta input Quantity
+3. tanayakan apa ingin belanja lagi 
+    -confirm
+
+    -jika dai ingin belanja lagi balik ke langkah 1 
+    -jika tidak ingin belanja lagi maka lanjut ke langkah 4 
+
+4. munculkan rincian belanja seperti ss dan meminta input jumlah uang 
+
+    -jika uang kurang ulangi langkah 4 
+    -jika tidak kurang lanjut ke step 5
+
+5. munculkan rincian belanja uang yang dibayar berikut kembalian 
+    seperti ss

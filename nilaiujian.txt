@@ -1,0 +1,33 @@
+1. Menerima input berupa 
+    -nama
+    -bhs.inggris
+    -bhs.indo
+    -matematika
+    -ipa
+2. Hitung rata2 dari semuanya
+3. Penentuan nilai 
+    - 85 - A
+    - 84-76 - B 
+    - 75-66 - C
+    - 65-50 - D 
+    - sisanya - E
+
+    Lulus: A,B, dan C
+    Tidak Lulus: D, dan E
+4. Print di console: 
+   
+    Bhs.Inggris:
+    Bhs.Indonesia:
+    Matematika:
+    Ipa:
+    
+    Nama:
+    Dengan Nilai Akhir:
+    Index Nilai:
+    Mohon maaf, Anda dinyatakan tidak lulus
+   
+   
+    Nama:
+    Dengan Nilai Akhir:
+    Index Nilai:
+    Selamat, Anda dinyatakan Lulus

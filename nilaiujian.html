@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Nilai Ujian
+    </title>
+    <script>
+    var nama=prompt('Nama Anda: ')
+    var nilaiIng, nilaiIndo, nilaiMat, nilaiIpa;
+    if(nama != null && nama.length != 0)
+    {
+        nilaiIng=parseInt(prompt('Nilai Bahasa Inggris: '))
+        nilaiIndo=parseInt(prompt('Nilai Bahasa Indonesia: '))
+        nilaiMat=parseInt(prompt('Nilai Matematika: '))
+        nilaiIpa=parseInt(prompt('Nilai Ipa: '))
+    }
+
+    
+    var nilai
+    
+    // var ratarata=(nilaiIndo+nilaiIng+nilaiIpa+nilaiMat) / 4
+    // input dr prompt bertipe string
+    var bing=nilaiIng/4
+    var bindo=nilaiIndo/4
+    var mat=nilaiMat/4
+    var ipa=nilaiIpa/4
+    var ratarata=bindo+bing+mat+ipa
+
+    if(ratarata>=85){
+        nilai='A'
+    } else if (ratarata<=84&&ratarata>=76){
+        nilai='B'
+    } else if (ratarata<=75&&ratarata>=66){
+        nilai='C'
+    } else if (ratarata<=65&&ratarata>=50){
+        nilai='D'
+    } else {nilai='E'};
+    
+    var lulus
+    if (nilai=='A'||nilai=='B'||nilai=='C'){
+        lulus='Selamat, Anda dinyatakan LULUS'
+    }
+    // } else if (nilai=='B'){
+    //     lulus='Selamat, Anda dinyatakan LULUS'
+    // } else if (nilai=='C'){
+    //     lulus='Selamat, Anda dinyatakan LULUS'
+    // }
+    else {lulus='Mohon maaf, Anda TIDAK LULUS'}
+
+    
+    console.log(
+        'Nama: ' +nama
+        +'\nDengan Nilai Akhir: '+ratarata
+        +'\nIndex Nilai: '+nilai+'\n'
+        +lulus
+    );
+    
+    </script>
+</head>
+
+
+
+
+</html>
