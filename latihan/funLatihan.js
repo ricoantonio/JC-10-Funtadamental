@@ -1,9 +1,13 @@
+// email theo 
+// tmangowal@gmail.com
+// Subject: Progress 1 FP JC10 JKT
+
 // let balik =(x)=>{
 //     x=x.toLowerCase()
 //     if (x=="sup"){
 //         return "tumpah dong"
 //     }else{
-//         // return x.split('').reverse().join('')
+        // return x.split('').reverse().join('')
 
 //         let jumlah = x.length
 //         var katabaru=""
@@ -51,63 +55,99 @@
 // console.log(tambahin([1,1,1,-1,-1]));
 
 
-fibo=(x)=>{
-    var angka1= 0
-    var angka2= 1
-    var array=[angka1,angka2]
-    for (let i = 2; i <=x; i++) {
-        array[i]=angka1+angka2
-        angka1=angka2
-        angka2=array[i]
-    }
-    return array
-}
+// fibo=(x)=>{
+//     var angka1= 0
+//     var angka2= 1
+//     var array=[angka1,angka2]
+//     for (let i = 2; i <=x; i++) {
+//         array[i]=angka1+angka2
+//         angka1=angka2
+//         angka2=array[i]
+//     }
+//     return array
+// }
 
-console.log(fibo(9));
+// console.log(fibo(9));
 
-sorting=(x)=>{
-    baru=[]
-    for (var i = 0; i< x.length; i++) {
-        if (!baru.includes(x[i])){
-            baru.push(x[i])
-        }
-    }
-    return baru
-}
+// sorting=(x)=>{
+//     baru=[]
+//     for (var i = 0; i< x.length; i++) {
+//         if (!baru.includes(x[i])){
+//             baru.push(x[i])
+//         }
+//     }
+//     return baru
+// }
 
-console.log(sorting([1,3,3,3,4,4,3,5,5,9]));
+// console.log(sorting([1,3,3,3,4,4,3,5,5,9]));
 
 
-sort=(x)=>{
-    let baru=[x[0]]
-    for (let i = 0; i < x.length; i++) {
-        for (let j = 0; j < baru.length; j++) {
-            if(x[i]==baru[j]){
-                break;
-            }
-            if (j==baru.length-1){
-                baru.push(x[i])
-            }
-        }
+// sort=(x)=>{
+//     let baru=[x[0]]
+//     for (let i = 0; i < x.length; i++) {
+//         for (let j = 0; j < baru.length; j++) {
+//             if(x[i]==baru[j]){
+//                 break;
+//             }
+//             if (j==baru.length-1){
+//                 baru.push(x[i])
+//             }
+//         }
         
+//     }
+//     return baru
+// }
+ 
+// console.log(sort([10,20,10,10,30,20]));
+
+
+// mumble=(x)=>{
+//     baru=''
+//     for (let i = 0; i < x.length; i++) {
+//         baru+=x[i].toUpperCase()
+//         for (let j = 1; j <= i; j++) {
+//             baru+=x[i].toLowerCase()
+//         }
+//         baru+="-"
+//     }
+//     string=baru.slice(0,-1)
+//     return string
+// }
+
+// console.log(mumble("Hello"));
+
+dna=(x)=>{
+    baru=""
+    x=x.toUpperCase()
+    for (let i = 0; i < x.length; i++) {
+        if (x[i]=="A"){
+            baru+="T"
+        }
+        if (x[i]=="T"){
+            baru+="A"
+        }
+        if (x[i]=="G"){
+            baru+="C"
+        }
+        if (x[i]=="C"){
+            baru+="G"
+        }
     }
     return baru
 }
- 
-console.log(sort([10,20,10,10,30,20]));
 
+console.log(dna("ATGCATGC"));
 
-mumble=(x)=>{
-    baru=''
-    for (let i = 0; i < x.length; i++) {
-        baru+=x[i].toUpperCase()
-        for (let j = 1; j <= i; j++) {
-            baru+=x[i].toLowerCase()
+babyShark=()=>{
+    baru=""
+    kata=["Baby shark","Mommy shark","Daddy shark","Grandma shark","Grandpa shark"]
+    for (let i = 0; i < kata.length; i++) {
+        for (let j = 0; j < 3; j++) {
+            baru+=`${kata[i]} doo doo doo doo doo doo\n`
         }
-        baru+="-"
+        baru+=`${kata[i]}\n`
     }
-    string=baru.slice(0,-1)
-    return string
+    return baru
 }
 
-console.log(mumble("Hello"));
+console.log(babyShark());
