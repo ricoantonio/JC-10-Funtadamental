@@ -116,38 +116,173 @@
 
 // console.log(mumble("Hello"));
 
-dna=(x)=>{
-    baru=""
-    x=x.toUpperCase()
-    for (let i = 0; i < x.length; i++) {
-        if (x[i]=="A"){
-            baru+="T"
+// dna=(x)=>{
+//     baru=""
+//     x=x.toUpperCase()
+//     for (let i = 0; i < x.length; i++) {
+//         if (x[i]=="A"){
+//             baru+="T"
+//         }
+//         if (x[i]=="T"){
+//             baru+="A"
+//         }
+//         if (x[i]=="G"){
+//             baru+="C"
+//         }
+//         if (x[i]=="C"){
+//             baru+="G"
+//         }
+//     }
+//     return baru
+// }
+
+// console.log(dna("ATGCATGC"));
+
+// babyShark=()=>{
+//     baru=""
+//     kata=["Baby shark","Mommy shark","Daddy shark","Grandma shark","Grandpa shark"]
+//     for (let i = 0; i < kata.length; i++) {
+//         for (let j = 0; j < 3; j++) {
+//             baru+=`${kata[i]} doo doo doo doo doo doo\n`
+//         }
+//         baru+=`${kata[i]}\n`
+//     }
+//     return baru
+// }
+
+// console.log(babyShark());
+
+// dupMap=(x,y)=>{
+//     hasil=[]
+//     for (let i = 0; i < x.length; i++) {
+//         each=y(x[i])
+//         hasil.push(each)
+//     }
+//     return hasil
+// }
+
+// kali=(x)=>{
+//     return x*2
+// }
+
+// console.log(dupMap([1,2,3,4,5],kali))
+
+// jumlahHuruf=(x)=>{
+//     x=x.split('')
+//     var huruf=[...'abcdefghijklmnopqrstuvwxyz']
+//     hasil=0
+//     x.forEach(val => {
+//         index=huruf.indexOf(val)+1
+//         hasil+=index
+//     });
+//     return hasil
+// }
+
+// console.log(jumlahHuruf("abcde"));
+
+// jumlahGenap=(x)=>{
+//     x=x.split('')
+//     var huruf=[...'abcdefghijklmnopqrstuvwxyz']
+//     hasil=0
+//     x.forEach(val => {
+//         index=huruf.indexOf(val)+1
+//         if(index%2==0){
+//             hasil+=index
+//         }
+        
+//     });
+//     return hasil
+// }
+
+// console.log(jumlahGenap("abcde"));
+
+// jumlahIndexGanjil=(x)=>{
+//     x=x.split('')
+//     var huruf=[...'abcdefghijklmnopqrstuvwxyz']
+//     hasil=0
+//     for (let i = 0; i < x.length; i+=2) {
+//         index=huruf.indexOf(x[i])+1
+//         hasil+=index
+//     }
+        
+//     return hasil
+// }
+
+// console.log(jumlahIndexGanjil("abcde"));
+
+// kaper=(x)=>{
+//         total=0
+//         do {
+//                 sort=parseInt(x.toString().split('').sort((a,b)=>{a-b}).join(''))
+//                 sortbesar=parseInt(x.toString().split('').sort((a,b)=>{b-a}).join(''))
+
+//                 x=sortbesar-sort
+//                 while(x.length<4){
+//                         x=parseInt(x.toString()+'0')
+//                 }
+//                 total++
+              
+//         } while (x!=6174);
+//         return total
+        
+// }
+
+// console.log(kaper("7615"));
+
+// gaAdaVocal=(x='')=>{
+//         return x.replace(/[aiueo]/gi,'')
+// }
+// //Regexp
+
+// console.log(gaAdaVocal('testing'));
+
+// target=(x)=>{
+//         jumlah=0
+//         p=1000
+//         do {
+//                 d=0.02
+//                 v=50
+//                 jumlahTambah=p*d+v
+//                 p+=jumlahTambah
+//                 jumlah++
+//         } while (p<=x);
+//         return jumlah
+// }
+
+// console.log(target(3500));
+
+angkaToHuruf=(x)=>{
+        huruf='abcdefghijklmnopqrstuvwxyz'
+        hasil=''
+        for (let i = 0; i < x.length; i++) {
+                if (x[i]>0) {
+                        hasil+= huruf.charAt(x[i]-1)
+                }else{
+                        hasil+=' '
+                }
         }
-        if (x[i]=="T"){
-            baru+="A"
-        }
-        if (x[i]=="G"){
-            baru+="C"
-        }
-        if (x[i]=="C"){
-            baru+="G"
-        }
-    }
-    return baru
+        return hasil
 }
 
-console.log(dna("ATGCATGC"));
+console.log(angkaToHuruf([1,2,0,3]));
 
-babyShark=()=>{
-    baru=""
-    kata=["Baby shark","Mommy shark","Daddy shark","Grandma shark","Grandpa shark"]
-    for (let i = 0; i < kata.length; i++) {
-        for (let j = 0; j < 3; j++) {
-            baru+=`${kata[i]} doo doo doo doo doo doo\n`
+hurufTambahAngka=(x,y)=>{
+        huruf='abcdefghijklmnopqrstuvwxyz'
+        hasil=''
+        index=''
+        for (let i = 0; i < x.length; i++) {
+                
+                if (y>26){
+                        index+=huruf.indexOf(x[i])
+                        hasil+=huruf.charAt(index[i]-26+y)
+                }else{
+                        index+=huruf.indexOf(x[i])
+                        hasil+=huruf.charAt(index[i]+y)
+                }
         }
-        baru+=`${kata[i]}\n`
-    }
-    return baru
+        return hasil
 }
 
-console.log(babyShark());
+
+console.log(hurufTambahAngka('abc',27));
+
