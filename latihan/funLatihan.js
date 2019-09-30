@@ -251,38 +251,56 @@
 
 // console.log(target(3500));
 
-angkaToHuruf=(x)=>{
-        huruf='abcdefghijklmnopqrstuvwxyz'
-        hasil=''
-        for (let i = 0; i < x.length; i++) {
-                if (x[i]>0) {
-                        hasil+= huruf.charAt(x[i]-1)
-                }else{
+// angkaToHuruf=(x)=>{
+//         huruf='abcdefghijklmnopqrstuvwxyz'
+//         hasil=''
+//         for (let i = 0; i < x.length; i++) {
+//                 if (x[i]>0) {
+//                         hasil+= huruf.charAt(x[i]-1)
+//                 }else{
+//                         hasil+=' '
+//                 }
+//         }
+//         return hasil
+// }
+
+// console.log(angkaToHuruf([1,2,0,3]));
+
+// hurufTambahAngka=(x,y)=>{
+//         huruf='abcdefghijklmnopqrstuvwxyz'
+//         hasil=''
+//         index=''
+//         for (let i = 0; i < x.length; i++) {
+                
+//                 if (y>26){
+//                         index+=huruf.indexOf(x[i])
+//                         hasil+=huruf.charAt(index[i]-26+y)
+//                 }else{
+//                         index+=huruf.indexOf(x[i])
+//                         hasil+=huruf.charAt(index[i]+y)
+//                 }
+//         }
+//         return hasil
+// }
+
+
+// console.log(hurufTambahAngka('abc',27));
+
+
+
+segitiga=(x)=>{
+        for (let i = 1; i <= x; i++) {
+                var hasil=''
+                for (let k = 1; k <= x-i; k++) {
                         hasil+=' '
                 }
-        }
-        return hasil
-}
-
-console.log(angkaToHuruf([1,2,0,3]));
-
-hurufTambahAngka=(x,y)=>{
-        huruf='abcdefghijklmnopqrstuvwxyz'
-        hasil=''
-        index=''
-        for (let i = 0; i < x.length; i++) {
-                
-                if (y>26){
-                        index+=huruf.indexOf(x[i])
-                        hasil+=huruf.charAt(index[i]-26+y)
-                }else{
-                        index+=huruf.indexOf(x[i])
-                        hasil+=huruf.charAt(index[i]+y)
+                for (let j = 1; j <= i; j++) {
+                        hasil+='* '
+                        
                 }
+                console.log(hasil);
         }
-        return hasil
+        
 }
 
-
-console.log(hurufTambahAngka('abc',27));
-
+console.log(segitiga(5));

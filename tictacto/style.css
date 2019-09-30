@@ -1,0 +1,12 @@
+.kotak {
+    transition: transform .1s; /* Animation */
+    margin: 0 auto;
+    height: 80px;
+    width: 80px;
+    border-style: solid;
+    border-color: black;
+
+}
+.kotak:hover {
+    background: rgb(173, 173, 173);
+}
