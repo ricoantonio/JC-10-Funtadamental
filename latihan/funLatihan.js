@@ -288,19 +288,57 @@
 
 
 
-segitiga=(x)=>{
-        for (let i = 1; i <= x; i++) {
-                var hasil=''
-                for (let k = 1; k <= x-i; k++) {
-                        hasil+=' '
-                }
-                for (let j = 1; j <= i; j++) {
-                        hasil+='* '
+// segitiga=(x)=>{
+//         for (let i = 1; i <= x; i++) {
+//                 var hasil=''
+//                 for (let k = 1; k <= x-i; k++) {
+//                         hasil+=' '
+//                 }
+//                 for (let j = 1; j <= i; j++) {
+//                         hasil+='* '
+                        
+//                 }
+//                 console.log(hasil);
+//         }
+        
+// }
+
+// console.log(segitiga(5));
+
+// var utc = new Date().toJSON().slice(0,10).replace(/-/g,'/');
+// console.log(utc);
+
+// var arr = [{id:5, data:1},{id:5, data:1},{id:5, data:1},{id:5, data:1}]
+// var data=''
+
+// for (let i = 0; i < arr.length; i++) {
+//         data+=`${arr[i].data } ,`
+// }
+// var hasil = data.slice(0,-1)
+// console.log(hasil);
+
+fnCoba = (x) =>{
+        var arr = [x]
+        console.log(arr);
+        for (let i = 0; i < x.length; i++) {
+                if(x[i] < 0 ){
+                        x.splice(x[i], 1)
+                        // }else{
+                        //         if (x[i] == )
+                        // }
+                        i++
+                }else{
                         
                 }
-                console.log(hasil);
+                
         }
+        return console.log(arr);
         
 }
 
-console.log(segitiga(5));
+fnCoba(-2,-1,2)
+
+// var arr = [-1,2]
+// console.log(arr.splice(0,1));
+
+// console.log(arr);
